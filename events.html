@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Events - Event Center Project</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="events-container">
+        <header>
+            <h1>Event Center Project</h1>
+            <button class="nav-toggle" aria-label="Open navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <h2>Welcome to the Events Page!</h2>
+            <p>Here you can find information about our upcoming events.</p>
+        </div>
+        <main>
+            <h2>Events</h2>
+            <p>Check out our upcoming events!</p>
+            <div class="event-cards">
+                <div class="event-card">
+                     <img src="assets/6873769.jpg" alt="Farmers Market" class="event-img" />
+                    <h3>Farmers Market</h3>
+                    <p class="event-date">June 11, 2025 | 10am - 12pm</p>
+                    <p class="event-desc">Join us for fresh produce and local goods at our Farmers Market.</p>
+                </div>
+                <div class="event-card">
+                     <img src="assets/craft-fairlogo.webp" alt="Hawaiian Craftfair" class="event-img" />
+                    <h3>Hawaiian Craftfair</h3>
+                    <p class="event-date">June 13, 2025 | 9am - 3pm</p>
+                    <p class="event-desc">Discover unique handmade crafts and support local artisans.</p>
+                </div>
+                <div class="event-card">
+                     <img src="assets/images.jpg" alt="Graduation Ceremony" class="event-img" />
+                    <h3>Pearl City Highschool Graduation Ceremony</h3>
+                    <p class="event-date">June 20, 2025 | 6pm - 8pm</p>
+                    <p class="event-desc">Celebrate the achievements of Pearl City High School's graduating class.</p>
+                </div>
+            </div>
+        </main>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const navToggle = document.querySelector('.nav-toggle');
+                const navUl = document.querySelector('nav ul');
+                navToggle.addEventListener('click', function () {
+                    navUl.classList.toggle('open');
+                });
+            });
+        </script>
+    </div>
+</body>
+<footer>
+    <p>&copy; 2025 Event Center Project</p>
+</footer>
+
+</html>

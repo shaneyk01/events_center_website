@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Event Center Project</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Event Center Project</h1>
+            <button class="nav-toggle" aria-label="Open navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Hero Banner Start -->
+        <section class="hero-banner">
+            <div class="hero-img-container">
+                <img src="assets/6873769.jpg" alt="Farmers Market Event" class="hero-img">
+            </div>
+            <div class="hero-content">
+                <h2>Don't Miss Our Next Big Event!</h2>
+                <p>Join us at the Farmers Market on June 11, 2025 for fresh produce, local goods, and community fun.</p>
+                <a href="events.html" class="hero-btn">See All Events</a>
+            </div>
+        </section>
+        <main>
+            <h2>Welcome to the Event Center Project!</h2>
+            <p>This is a simple project to demonstrate HTML structure and navigation.</p>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Event Center Project</p>
+        </footer>
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navUl = document.querySelector('nav ul');
+            navToggle.addEventListener('click', function () {
+                navUl.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

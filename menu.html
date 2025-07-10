@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="menu-container">
+        <header><button class="nav-toggle" aria-label="Open navigation">
+                <span class="hamburger"></span>
+            </button>
+            <h1>Event Center Project</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="menu box">
+            <h1>Our Menu</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Item</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Appetizers</td>
+                        <td>Spring Rolls</td>
+                        <td>Crispy rolls filled with veggies</td>
+                        <td>$5.99</td>
+                    </tr>
+                    <tr>
+                        <td>Appetizers</td>
+                        <td>Stuffed Mushrooms</td>
+                        <td>Mushrooms stuffed with cheese and herbs</td>
+                        <td>$6.99</td>
+                    </tr>
+                    <tr>
+                        <td>Main Course</td>
+                        <td>Grilled Chicken</td>
+                        <td>Marinated chicken with herbs</td>
+                        <td>$15.99</td>
+                    </tr>
+                    <tr>
+                        <td>Main Course</td>
+                        <td>Beef Steak</td>
+                        <td>Grilled steak with garlic butter</td>
+                        <td>$18.99</td>
+                    </tr>
+                    <tr>
+                        <td>Desserts</td>
+                        <td>Cheesecake</td>
+                        <td>Creamy cheesecake with berry topping</td>
+                        <td>$7.99</td>
+                    </tr>
+                    <tr>
+                        <td>Desserts</td>
+                        <td>Chocolate Lava Cake</td>
+                        <td>Warm chocolate cake with molten center</td>
+                        <td>$8.99</td>
+                    </tr>
+                    <tr>
+                        <td>Beverages</td>
+                        <td>Fresh Lemonade</td>
+                        <td>Refreshing homemade lemonade</td>
+                        <td>$3.99</td>
+                    </tr>
+                    <tr>
+                        <td>Beverages</td>
+                        <td>Iced Coffee</td>
+                        <td>Chilled coffee with milk and sugar</td>
+                        <td>$4.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        </main>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const navToggle = document.querySelector('.nav-toggle');
+                const navUl = document.querySelector('nav ul');
+                navToggle.addEventListener('click', function () {
+                    navUl.classList.toggle('open');
+                });
+            });
+        </script>
+</body>
+<footer>
+    <p>&copy; 2023 Event Center Project</p>
+</footer>
+
+</html>
