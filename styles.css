@@ -1,0 +1,397 @@
+/* Import a clean, modern font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+/* Global Styles */
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(135deg, #232526 0%, #4da6ff 100%);
+    color: #f0f0f0;
+}
+
+/* Main Container Styles */
+.container,
+.menu-container,
+.location-container,
+.events-container,
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: bottom;
+    justify-content: flex-start;
+    min-height: 90vh;
+    margin: 40px auto 0 auto;
+    padding: 32px 24px;
+    background: rgba(34, 34, 34, 0.92);
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(77,166,255,0.18);
+    max-width: 800px;
+    width: 90%;
+}
+
+/* Header and Navigation */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+nav ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    color: #4da6ff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #fff;
+    background: #4da6ff;
+    text-shadow: 0 0 8px #4da6ff;
+}
+
+/* Section Headings */
+h2 {
+    color: #4da6ff;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Paragraphs and Lists */
+p, ul {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+ul {
+    padding-left: 20px;
+}
+ul li {
+    margin-bottom: 8px;
+    font-size: 1.08rem;
+    letter-spacing: 0.5px;
+}
+
+/* Table Styles (Menu) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+    background: #292929;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(77,166,255,0.10);
+}
+th, td {
+    padding: 12px 10px;
+    text-align: left;
+}
+th {
+    background: #4da6ff;
+    color: #fff;
+    font-weight: 600;
+}
+tr:nth-child(even) {
+    background: #232323;
+}
+tr:nth-child(odd) {
+    background: #292929;
+}
+td {
+    color: #f0f0f0;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+label {
+    font-size: 15px;
+    color: #b0b0b0;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #353535;
+    color: #f0f0f0;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+input:focus, textarea:focus {
+    outline: 2px solid #4da6ff;
+    background: #222;
+}
+button, input[type="submit"] {
+    background: #4da6ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover, input[type="submit"]:hover {
+    background: #3399ff;
+}
+
+/* Map Container (Location Page) */
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 18px auto 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(77,166,255,0.10);
+}
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    display: block;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    background: rgba(34, 34, 34, 0.92);
+    color: #fff;
+    border-radius: 0 0 18px 18px;
+    margin-top: 32px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .container,
+    .menu-container,
+    .location-container,
+    .events-container,
+    .contact-form {
+        padding: 16px 4px;
+        border-radius: 10px;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    table, .map-container iframe {
+        font-size: 0.95rem;
+        height: 200px;
+    }
+}
+/* Make body a flex column and fill viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Make the main container grow to fill space */
+.container,
+.menu-container,
+.location-container,
+.events-container,
+.contact-form {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Footer stays at the bottom */
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    background: rgba(34, 34, 34, 0.92);
+    color: #fff;
+    border-radius: 0 0 18px 18px;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+/* Hamburger styles */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+    z-index: 1001;
+}
+.hamburger {
+    width: 28px;
+    height: 3px;
+    background: #4da6ff;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+}
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background: #4da6ff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.hamburger::before {
+    top: -9px;
+}
+.hamburger::after {
+    top: 9px;
+}
+
+/* Responsive nav */
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        background: #232526;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        display: none;
+        margin: 0;
+        padding: 16px 0;
+        z-index: 1000;
+    }
+    nav ul.open {
+        display: flex;
+    }
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        right: 24px;
+        top: 18px;
+    }
+    header {
+        position: relative;
+    }
+}
+
+
+/* Add to styles.css */
+.event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.event-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    max-width: 300px;
+    min-width: 220px;
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline-position;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.event-date {
+    font-weight: bold;
+    color: #0b0c0c;
+    margin-bottom: 0.5rem;
+}
+
+.event-desc {
+    margin-bottom: 0;
+    color: #0c0101;
+    font-size: 0.95rem;
+}
+
+.event-card img {
+  max-width: 100%;     /* Keeps the image responsive */
+  height: auto;
+  max-height: 200px;   /* Adjust this value to control vertical size */
+  display: block;
+  margin: 0 auto;      /* Centers the image */
+  object-fit: cover;   /* Keeps it neat without stretching */
+}
+/* ...existing code... */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #174d1a;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 2rem 0;
+    min-height: 20px;
+    gap: 2rem;
+}
+
+.hero-img-container {
+    flex:shrink;
+    display:box;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 1rem;
+    max-width: 80px;
+    max-height: 20px;
+}
+
+.hero-img {
+  max-width: 100%;     /* Keeps the image responsive */
+  height: auto;
+  max-height: 200px;   /* Adjust this value to control vertical size */
+  display: block;
+  margin: 0 auto;      /* Centers the image */
+  object-fit: cover; 
+}
+/* ...existing code... */
